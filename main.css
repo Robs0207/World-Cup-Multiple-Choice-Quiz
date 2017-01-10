@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* container covering all the HTML elements (also DOM manipualted ones) */
+
+.js-container {
+    text-align: center;
+    overflow: auto;
+}
+
+
+/* applying theme to quiz heading and buttons*/
+
+.js-heading {
+    color: white;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 100px;
+    background: rgba(142, 237, 232, 0.3);
+    margin-top: 1em;
+    overflow: auto;
+    position: relative;
+}
+
+.js-question h3 {
+    color: rgb(57, 130, 173);
+    font-weight: bold;
+    margin-bottom: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.js-buttons {
+    border: 0;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 8px 20px 8px 20px;
+    margin-top: 1em;
+    margin-left: 40%;
+    text-align: left;
+}
+
+.js-start-button:active {
+    color: rgb(57, 130, 173);
+}
+
+.js-start-button:hover {
+    cursor: pointer;
+    color: rgb(164, 127, 29);
+}
+
+.js-next-question-control {
+    position: absolute;
+    top: 7.75em;
+    right: 2.7em;
+    color: rgb(57, 130, 173);
+}
+
+.js-next-question-control:hover {
+    cursor: pointer;
+    color: rgb(142, 237, 232);
+}
+
+.js-choices {
+    color: rgb(57, 130, 173);
+    font-weight: bold;
+    overflow: auto;
+    text-align: left;
+    margin-left: 11em;
+}
+
+.js-choices label {
+    padding-left: 10px;
+}
+
+.js-score-board-box {
+    position: relative;
+    max-width: 700px;
+    margin-top: 1em;
+    border-radius: 100px;
+    margin: 0 auto;
+    overflow: auto;
+    color: rgb(57, 130, 173);
+    text-align: center;
+    height: 250px;
+    background: rgba(142, 237, 232, 0.3);
+}
+
+#js-score-board-box h3 {
+    color: white;
+    font-weight: bold;
+  }
+
+h6 {
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.js-progress-bar {
+    text-align: center;
+    line-height: 20px;
+    color: white;
+}
+
+#totalProgressBar,
+#totalCorrectProgressBar,
+#totalIncorrectProgressBar {
+    position: relative;
+    padding-left: 5.5em;
+    height: 20px;
+    width: 300px;
+}
+
+#totalQuestionsProgress {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: orange;
+    margin-left: 20px;
+}
+
+#totalCorrectProgress {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: green;
+    margin-left: 20px;
+}
+
+#totalIncorrectProgress {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: red;
+    margin-left: 20px;
+}
+
+#incorrectLabel {
+    margin-bottom: 1em;
+}
+
+
+/*
+Responsive CSS for Mobile Devices using above declarations
+*/
+@media only screen and (max-device-width : 675px) and (orientation : portrait) {
+
+.js-question h3 {
+    color: rgb(57, 130, 173);
+    font-weight: bold;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
